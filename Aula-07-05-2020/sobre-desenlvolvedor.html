@@ -7,7 +7,7 @@
     
     <style>
          *{
-             /* reset da pagina */
+             /* heset da pagina */
              margin: 0;
              padding: 0;
          }
@@ -42,16 +42,16 @@
                 padding: 5px;
             }
            
-            .img-logo{
-                width: 10%;
+            #img-logo{
+                width: 40%;
             }
             
             .titulo{
-                display: inline-bloc;
+                display: inline-block;
                 margin: 25px auto;
             }
 
-            #titulo-stile{
+            #titulo-site{
                 color: rebeccapurple;
             }
 
@@ -66,12 +66,68 @@
                 margin-top: 15px;
                 margin-left: 100px;
                 margin-right: 100px;
+                border-radius: 10px;
             }
 
             .text-center{
                 text-align: center;
             }
+            .container{
+                max-width: 960px;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
 
+            .barra{
+                background-color: rebeccapurple;
+                height: 100px;
+                border-top-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                position: static;
+                top: 0;
+            }
+            .foto{
+                width: 135px;
+                position: absolute;
+                padding: 20px;
+            }
+
+            .foto img{
+                width: 100%;
+                border-radius: 45%;
+            }
+
+            .nome-desenvolvedor{
+                padding: 30px;
+                margin-left: 180px;
+            }
+
+            .nome-desenvolvedor h1{
+                color: seashell;
+                font-size: 35px;
+            }
+
+            .dados-desenvolvedor{
+                margin-top: 20px;
+                padding: 25px;
+                border-left: 10px solid;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+
+            .dados-tabela{
+                padding: 10px;
+                padding-bottom: 20px;
+            }
+
+            .dados-tabela a{
+                font-size: 20px;
+                color: rebeccapurple;
+            }
+            body{
+                font-size: 20px;
+                color:rebeccapurple
+            }
     </style>
 </head>
 
@@ -79,22 +135,55 @@
 
     <header>
         <div class="topo">
-            <div class="logo">
-                <div>
+            <div class="container"></div>
+                 <div class="logo">
                 <img id="img-logo" src="img/logonerv.png" alt="Logo da Pagina">
-        </div>
-        <h1 class="titulo">
-            <a id="titulo-site" href="https://www.tudogostoso.com.br/" target="_blank">Receitas</a>
-        </h1>
-        </div> <!-- fim do container-->
-    
-    </div>  
-<div class="barra-topo"></div>
-   
-</header>
-
-
-
+                </div>
+                 <h1 class="titulo">
+                 <a id="titulo-site" href="https://www.tudogostoso.com.br/" target="_blank">Receitas</a>
+                </h1>
+            </div> <!-- fim do container-->
+    </header>
+    <div class="container">
+        <div class="card text center">
+        <h1 class="titulo-site">SOBRE O DESENVOLVEDOR</h1>   
+    </div>
+    <div class="card">
+        <div class="barra">
+                <div class="foto">
+                    <img src="img/desenvolver.jpg" alt="foto do desenvolvedor">
+                </div>
+                <div class="nome-desenvolvedor">
+                    <h1>Tiago Gabriel Carmelino</h1>
+                </div>
+                </div><!--Fim da barra-->
+                <div class="dados-desenvolvedor">
+                    <table>
+                        <tr>
+                            <td><img src="img/email (1).png" alt=""></td>
+                            <td class="dados-tabela">
+                                <a href="mailto:tiago.carmelino@etec.sp.gov">tiago.carmelino@etec.sp.gov</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/github.png" alt="github"></td>
+                            <td class="dados-tabela">
+                                <a href="https://github.com/TiagoCarmelino" target="_blanck">https://github.com/TiagoCarmelino</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/monitor.png" alt="curso"></td>
+                            <td>Técnico em Deselvolvimento de Sistema Integrado ao Ensino Médio</td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/map-marker.png" alt="cidade"></td>
+                            <td>
+                                <a target="_blanck"></a> Lençóis Paulista
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+        </div><!--Fim do container-->
 </body>
 
 </html>
